@@ -21,6 +21,7 @@ gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk'
 gem 'friendly_id', '~> 5.1.0'
 gem 'sitemap_generator'
+gem 'ckeditor'
 gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
