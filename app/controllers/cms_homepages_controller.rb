@@ -69,6 +69,6 @@ class CmsHomepagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cms_homepage_params
-      params.require(:cms_homepage).permit(:header_title_1, :header_caption_1, :header_title_2, :header_caption_2, :header_title_3, :header_caption_3, :header_title_4, :header_caption_4, :main_description, :news_title_1, :news_content_1, :news_link_1, :news_title_2, :news_content_2, :news_link_2, :news_title_3, :news_content_3, :news_link_3)
+      params.require(:cms_homepage).permit(:header_title_1, :header_caption_1, :header_title_2, :header_caption_2, :header_title_3, :header_caption_3, :header_title_4, :header_caption_4, :main_description, :news_title_1, :news_content_1, :news_link_1, :news_title_2, :news_content_2, :news_link_2, :news_title_3, :news_content_3, :news_link_3, :header_image_1, :header_image_2, :header_image_3, :header_image_4)
     end
 end

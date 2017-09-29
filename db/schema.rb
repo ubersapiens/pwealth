@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929110856) do
+ActiveRecord::Schema.define(version: 20170929115528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,8 +49,24 @@ ActiveRecord::Schema.define(version: 20170929110856) do
     t.string   "news_title_3"
     t.text     "news_content_3"
     t.string   "news_link_3"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "header_image_1_file_name"
+    t.string   "header_image_1_content_type"
+    t.integer  "header_image_1_file_size"
+    t.datetime "header_image_1_updated_at"
+    t.string   "header_image_2_file_name"
+    t.string   "header_image_2_content_type"
+    t.integer  "header_image_2_file_size"
+    t.datetime "header_image_2_updated_at"
+    t.string   "header_image_3_file_name"
+    t.string   "header_image_3_content_type"
+    t.integer  "header_image_3_file_size"
+    t.datetime "header_image_3_updated_at"
+    t.string   "header_image_4_file_name"
+    t.string   "header_image_4_content_type"
+    t.integer  "header_image_4_file_size"
+    t.datetime "header_image_4_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
