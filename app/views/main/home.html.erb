@@ -62,24 +62,14 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
+<div class="container" id="news-container">
+  <div class="row">
+    <% @news.last(3).each do |n| %>
       <div class="col-sm-4">
-        <h3><%= @cms_homepage.news_title_1 %></h3>
-        <p><%= @cms_homepage.news_content_1.html_safe %></p>
-        <a href="<%= @cms_homepage.news_link_1 %>">Read more</a>
+        <p id="news-title"><%= n.title %></p>
+        <p id="news-content"><%= n.content %></p>
+        <%= link_to 'read more', n.link %></p>
       </div>
-      <div class="col-sm-4">
-        <h3><%= @cms_homepage.news_title_2 %></h3>
-        <p><%= @cms_homepage.news_content_2.html_safe %></p>
-        <a href="<%= @cms_homepage.news_link_2 %>">Read more</a>
-      </div>
-      <div class="col-sm-4">
-        <h3><%= @cms_homepage.news_title_3 %></h3>
-        <p><%= @cms_homepage.news_content_3.html_safe %></p>
-        <a href="<%= @cms_homepage.news_link_3 %>">Read more</a>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
