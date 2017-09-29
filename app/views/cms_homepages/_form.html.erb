@@ -1,0 +1,89 @@
+<%= form_for(@cms_homepage) do |f| %>
+  <% if @cms_homepage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cms_homepage.errors.count, "error") %> prohibited this cms_homepage from being saved:</h2>
+
+      <ul>
+      <% @cms_homepage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :header_title_1 %><br>
+    <%= f.text_field :header_title_1, placeholder: @cms_homepage.header_title_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_caption_1 %><br>
+    <%= f.text_field :header_caption_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_title_2 %><br>
+    <%= f.text_field :header_title_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_caption_2 %><br>
+    <%= f.text_field :header_caption_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_title_3 %><br>
+    <%= f.text_field :header_title_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_caption_3 %><br>
+    <%= f.text_field :header_caption_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_title_4 %><br>
+    <%= f.text_field :header_title_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :header_caption_4 %><br>
+    <%= f.text_field :header_caption_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :main_description %><br>
+    <%= f.text_area :main_description %>
+  </div>
+  <div class="field">
+    <%= f.label :news_title_1 %><br>
+    <%= f.text_field :news_title_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_content_1 %><br>
+    <%= f.text_area :news_content_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_link_1 %><br>
+    <%= f.text_field :news_link_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_title_2 %><br>
+    <%= f.text_field :news_title_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_content_2 %><br>
+    <%= f.text_area :news_content_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_link_2 %><br>
+    <%= f.text_field :news_link_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_title_3 %><br>
+    <%= f.text_field :news_title_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_content_3 %><br>
+    <%= f.text_area :news_content_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :news_link_3 %><br>
+    <%= f.text_field :news_link_3 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

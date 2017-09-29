@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929110854) do
+ActiveRecord::Schema.define(version: 20170929110856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,29 @@ ActiveRecord::Schema.define(version: 20170929110854) do
   end
 
   add_index "ckeditor_assets", ["type"], name: "index_ckeditor_assets_on_type", using: :btree
+
+  create_table "cms_homepages", force: :cascade do |t|
+    t.string   "header_title_1"
+    t.string   "header_caption_1"
+    t.string   "header_title_2"
+    t.string   "header_caption_2"
+    t.string   "header_title_3"
+    t.string   "header_caption_3"
+    t.string   "header_title_4"
+    t.string   "header_caption_4"
+    t.text     "main_description"
+    t.string   "news_title_1"
+    t.text     "news_content_1"
+    t.string   "news_link_1"
+    t.string   "news_title_2"
+    t.text     "news_content_2"
+    t.string   "news_link_2"
+    t.string   "news_title_3"
+    t.text     "news_content_3"
+    t.string   "news_link_3"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",            null: false
