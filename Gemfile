@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -12,7 +12,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.3.3'
-gem 'font-awesome-rails', git: 'git://github.com/bokmann/font-awesome-rails'
+gem 'font-awesome-rails'
 gem 'rails_12factor'
 gem 'sorcery'
 gem 'puma'
