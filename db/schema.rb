@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929125115) do
+ActiveRecord::Schema.define(version: 20171001171248) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,33 @@ ActiveRecord::Schema.define(version: 20170929125115) do
     t.string   "header_image_4_content_type"
     t.integer  "header_image_4_file_size"
     t.datetime "header_image_4_updated_at"
+    t.string   "header_image_5_file_name"
+    t.string   "header_image_5_content_type"
+    t.integer  "header_image_5_file_size"
+    t.datetime "header_image_5_updated_at"
+    t.string   "header_title_5"
+    t.string   "header_caption_5"
+  end
+
+  create_table "cms_pages", force: :cascade do |t|
+    t.text     "text_1"
+    t.text     "text_2"
+    t.text     "text_3"
+    t.string   "header_image_file_name"
+    t.string   "header_image_content_type"
+    t.integer  "header_image_file_size"
+    t.datetime "header_image_updated_at"
+    t.string   "image_1_file_name"
+    t.string   "image_1_content_type"
+    t.integer  "image_1_file_size"
+    t.datetime "image_1_updated_at"
+    t.string   "image_2_file_name"
+    t.string   "image_2_content_type"
+    t.integer  "image_2_file_size"
+    t.datetime "image_2_updated_at"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "title"
   end
 
   create_table "news", force: :cascade do |t|

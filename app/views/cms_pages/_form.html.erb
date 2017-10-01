@@ -1,0 +1,45 @@
+<%= form_for(@cms_page) do |f| %>
+  <% if @cms_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cms_page.errors.count, "error") %> prohibited this cms_page from being saved:</h2>
+
+      <ul>
+      <% @cms_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text_1 %><br>
+    <%= f.cktext_area :text_1, rows: 10 %>
+  </div>
+  <div class="field">
+    <%= f.label :text_2 %><br>
+    <%= f.cktext_area :text_2, rows: 10 %>
+  </div>
+  <div class="field">
+    <%= f.label :text_3 %><br>
+    <%= f.cktext_area :text_3, rows: 10 %>
+  </div>
+  <div class="field">
+    <%= f.label :text_3 %><br>
+    <%= f.text_area :text_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :image_1 %><br>
+    <%= f.file_field :image_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :image_2 %><br>
+    <%= f.file_field :image_2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

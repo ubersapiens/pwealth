@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cms_pages
   resources :news
   mount Ckeditor::Engine => '/ckeditor'
   root 'main#home'
