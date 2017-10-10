@@ -1,5 +1,9 @@
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+<<<<<<< HEAD
 /Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-18332-1du1ram.rb extconf.rb
+=======
+/Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-3875-6tspb4.rb extconf.rb
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5
 creating Makefile
 
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.3/ext/debug_inspector
@@ -12,4 +16,8 @@ linking shared-object debug_inspector.bundle
 
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/debug_inspector-0.0.3/ext/debug_inspector
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20171010-18332-2ktrse
+=======
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20171010-3875-8dlgms
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5

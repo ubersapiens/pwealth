@@ -1,5 +1,9 @@
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.11/ext/mri
+<<<<<<< HEAD
 /Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-18332-1jjpo4u.rb extconf.rb
+=======
+/Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-3875-ilnapp.rb extconf.rb
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5
 creating Makefile
 
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.11/ext/mri
@@ -16,4 +20,8 @@ linking shared-object bcrypt_ext.bundle
 
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/bcrypt-3.1.11/ext/mri
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20171010-18332-1bmhkcn
+=======
+/usr/bin/install -c -m 0755 bcrypt_ext.bundle ./.gem.20171010-3875-1pilehp
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5

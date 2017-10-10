@@ -1,5 +1,9 @@
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/pg-0.20.0/ext
+<<<<<<< HEAD
 /Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-18332-1fx1y2i.rb extconf.rb
+=======
+/Users/JFP/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20171010-3875-10sde6m.rb extconf.rb
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
 checking for libpq-fe.h... yes
@@ -71,4 +75,8 @@ linking shared-object pg_ext.bundle
 
 current directory: /Users/JFP/Code/Work/freelance/pwealth/vendor/bundle/ruby/2.2.0/gems/pg-0.20.0/ext
 make "DESTDIR=" install
+<<<<<<< HEAD
 /usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20171010-18332-13rt65t
+=======
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20171010-3875-1ojwolk
+>>>>>>> 564f42579dd4566081802ed7830d1c2bc09a41a5
