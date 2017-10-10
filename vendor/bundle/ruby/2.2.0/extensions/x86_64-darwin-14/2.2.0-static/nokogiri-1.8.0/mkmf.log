@@ -1,0 +1,43 @@
+"clang -o conftest -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/Users/JFP/.rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/JFP/.rbenv/versions/2.2.1/lib -L. -L/Users/JFP/.rbenv/versions/2.2.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/Users/JFP/.rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe    -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"clang -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/Users/JFP/.rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  -Wno-error=unused-command-line-argument-hard-error-in-future   -Werror -c conftest.c"
+error: unknown warning option '-Werror=unused-command-line-argument-hard-error-in-future'; did you mean '-Werror=unused-command-line-argument'? [-Werror,-Wunknown-warning-option]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+package configuration for libxml-2.0 is not found
+package configuration for libxslt is not found
+package configuration for libexslt is not found
+"clang -E -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/x86_64-darwin14 -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0/ruby/backward -I/Users/JFP/.rbenv/versions/2.2.1/include/ruby-2.2.0 -I. -I/Users/JFP/.rbenv/versions/2.2.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'libxml/xmlversion.h' file not found
+#include <libxml/xmlversion.h>
+         ^
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/xmlversion.h>
+/* end */
+
