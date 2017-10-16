@@ -85,6 +85,7 @@ Rails.application.configure do
       s3_host_name: 's3-us-west-2.amazonaws.com',
       s3_endpoint: 's3-us-west-2.amazonaws.com',
       url: ':s3_domain_url'
+    }
   }
 
   # Do not dump schema after migrations.
