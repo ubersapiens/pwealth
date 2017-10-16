@@ -17,3 +17,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+body {
+  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+}
+
+p {
+  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+}
+
+a {
+  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+}
+
+//NAV
+.navbar-header {
+  margin-bottom:4em;
+}
+
+.navbar-nav {
+  padding:2em;
+  font-size:15px;
+}
+
+#logo {
+  height:75px;
+}
