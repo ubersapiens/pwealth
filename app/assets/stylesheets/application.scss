@@ -24,18 +24,33 @@ body {
 
 p {
   font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-size:18px;
 }
 
 a {
   font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-size:18px;
+}
+
+ul {
+  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-size:18px;
 }
 
 //NAV
-.navbar-header {
-  margin-bottom:4em;
+.navbar {
+  margin-bottom:0px;
+  .navbar-header {
+    margin-bottom:4em;
+  }
+
+  .navbar-nav {
+    padding:2em;
+  }
 }
 
-.navbar-nav {
-  padding:2em;
-  font-size:15px;
+//FOOTER
+#footer-container .row {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
