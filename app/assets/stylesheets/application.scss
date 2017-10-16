@@ -33,13 +33,13 @@ a {
 //NAV
 .navbar-header {
   margin-bottom:4em;
+
+  img  {
+    height:75px;
+  }
 }
 
 .navbar-nav {
   padding:2em;
   font-size:15px;
-}
-
-#logo {
-  height:75px;
 }
