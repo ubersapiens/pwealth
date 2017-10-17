@@ -37,6 +37,7 @@ Rails.application.routes.draw do
   get 'immigration/residency_panama' => 'main#residency_panama'
   get 'immigration/second_passport_panama' => 'main#second_passport_panama'
   get 'real_estate' => 'main#real_estate'
+  get 'legal' => 'main#legal'
 
 
 end

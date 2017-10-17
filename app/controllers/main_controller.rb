@@ -12,7 +12,7 @@ class MainController < ApplicationController
   end
 
   def legal
-    @cms_page = CmsPage.find(2)
+    @cms_page = CmsPage.find(30)
   end
 
   def corporate_multi_family_office
