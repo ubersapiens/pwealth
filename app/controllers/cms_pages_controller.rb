@@ -62,8 +62,7 @@ class CmsPagesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cms_page
-      @cms_page = CmsPage.find(params[:id])
-  end
+      @cms_page = CmsPage.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
