@@ -7,12 +7,12 @@ class MainController < ApplicationController
   end
 
   #Pages
-  def accounting_office_secretarial_services
-    @cms_page = CmsPage.find(1)
+  def accounting_office_and_secretarial_services
+    @cms_page = CmsPage.find(25)
   end
 
   def legal
-    @cms_page = CmsPage.find(30)
+    @cms_page = CmsPage.find(26)
   end
 
   def corporate_multi_family_office

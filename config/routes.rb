@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'register' => 'users#new', :as => :register
   post 'logout' => 'user_sessions#destroy', :as => :logout
 
-  get 'accounting_office_secretarial_services' => 'main#accounting_office_secretarial_services'
+  get 'accounting_office_and_secretarial_services' => 'main#accounting_office_and_secretarial_services'
   get 'corporate_multi_family_office' => 'main#corporate_multi_family_office'
   get 'international_tax_planning' => 'main#international_tax_planning'
   get 'succession_planning' => 'main#succession_planning'
