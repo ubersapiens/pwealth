@@ -46,7 +46,7 @@ CmsPage.create({"title"=>"Banking Services", "text_1"=>"Lorem ipsum. Lorem ipsum
 CmsPage.create({"title"=>"Family Offices", "text_1"=>"Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. "})
 
 #Accounting
-CmsPage.create({"title"=>"Accounting and Secretarial Services", "text_1"=>"Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. "})
+CmsPage.create({"title"=>"Accounting Office and Secretarial Services", "text_1"=>"Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. "})
 
 #Legal
 CmsPage.create({"title"=>"Legal", "text_1"=>"Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. "})
