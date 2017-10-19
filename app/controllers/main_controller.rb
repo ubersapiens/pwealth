@@ -23,7 +23,7 @@ class MainController < ApplicationController
     @cms_page = CmsPage.find(4)
   end
 
-  def antigua_barbuda_citizenship
+  def antigua_and_barbuda_citizenship
     @cms_page = CmsPage.find(5)
   end
 
