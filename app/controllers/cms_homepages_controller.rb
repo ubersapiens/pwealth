@@ -42,7 +42,7 @@ class CmsHomepagesController < ApplicationController
   def update
     respond_to do |format|
       if @cms_homepage.update(cms_homepage_params)
-        format.html { redirect_to @cms_homepage, notice: 'Cms homepage was successfully updated.' }
+        format.html { redirect_to root_url, notice: 'Cms homepage was successfully updated.' }
         format.json { render :show, status: :ok, location: @cms_homepage }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class CmsHomepagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cms_homepage_params
-      params.require(:cms_homepage).permit(:header_title_1, :header_caption_1, :header_title_2, :header_caption_2, :header_title_3, :header_caption_3, :header_title_4, :header_caption_4, :header_title_5, :header_caption_5, :main_description, :header_image_1, :header_image_2, :header_image_3, :header_image_4, :header_image_5)
+      params.require(:cms_homepage).permit(:header_title_1, :header_caption_1, :header_title_2, :header_caption_2, :header_title_3, :header_caption_3, :header_title_4, :header_caption_4, :header_title_5, :header_caption_5, :main_description, :header_image_1, :header_image_2, :header_image_3, :header_image_4, :header_image_5, :description_image)
     end
 end

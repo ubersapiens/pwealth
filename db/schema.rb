@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171017100103) do
+ActiveRecord::Schema.define(version: 20171020115936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,8 +40,8 @@ ActiveRecord::Schema.define(version: 20171017100103) do
     t.string   "header_title_4"
     t.string   "header_caption_4"
     t.text     "main_description"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
     t.string   "header_image_1_file_name"
     t.string   "header_image_1_content_type"
     t.integer  "header_image_1_file_size"
@@ -64,6 +64,10 @@ ActiveRecord::Schema.define(version: 20171017100103) do
     t.datetime "header_image_5_updated_at"
     t.string   "header_title_5"
     t.string   "header_caption_5"
+    t.string   "description_image_file_name"
+    t.string   "description_image_content_type"
+    t.integer  "description_image_file_size"
+    t.datetime "description_image_updated_at"
   end
 
   create_table "cms_pages", force: :cascade do |t|
