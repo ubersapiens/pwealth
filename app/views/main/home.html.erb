@@ -7,6 +7,7 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -15,7 +16,6 @@
             <div class="carousel-caption">
               <h1><%= @cms_homepage.header_title_1 %></h1>
               <p><%= @cms_homepage.header_caption_1 %></p>
-              <p><a href="/legal" class="btn btn-primary btn-lg">Go</a></p>
             </div>
           </div>
         </div>
@@ -25,7 +25,6 @@
             <div class="carousel-caption">
               <h1><%= @cms_homepage.header_title_2 %></h1>
               <p><%= @cms_homepage.header_caption_2 %></p>
-              <p><a href="/legal" class="btn btn-primary btn-lg">Go</a></p>
             </div>
           </div>
         </div>
@@ -35,7 +34,6 @@
             <div class="carousel-caption">
               <h1><%= @cms_homepage.header_title_3 %></h1>
               <p><%= @cms_homepage.header_caption_3 %></p>
-              <p><a href="/legal" class="btn btn-primary btn-lg">Go</a></p>
             </div>
           </div>
         </div>
@@ -45,7 +43,15 @@
             <div class="carousel-caption">
               <h1><%= @cms_homepage.header_title_4 %></h1>
               <p><%= @cms_homepage.header_caption_4 %></p>
-              <p><a href="/legal" class="btn btn-primary btn-lg">Go</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <%= image_tag @cms_homepage.header_image_5.url %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><%= @cms_homepage.header_title_5 %></h1>
+              <p><%= @cms_homepage.header_caption_5 %></p>
             </div>
           </div>
         </div>
