@@ -19,19 +19,19 @@
 @import "font-awesome";
 
 body {
-  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 p {
-  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 a {
-  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 ul {
-  font-family: 'Century Gothic', 'Helvetica', 'Arial';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 //NAV
@@ -43,6 +43,10 @@ ul {
 
   .navbar-nav {
     padding:2em;
+  }
+
+  #nav-title {
+    font-weight:bold;
   }
 }
 
