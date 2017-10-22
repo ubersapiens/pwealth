@@ -1,16 +1,9 @@
 <div class="container" id="pages-container">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-sm-12">
-        <p><%= @cms_page.title.html_safe %></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
+        <h1><%= @cms_page.title.html_safe %></h1>
+
         <p><%= @cms_page.text_1.html_safe %></p>
       </div>
     </div>
