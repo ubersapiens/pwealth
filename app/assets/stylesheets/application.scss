@@ -37,6 +37,14 @@ ul {
 h1 {
   font-family: 'Lato', 'Helvetica', 'Arial';
 }
+
+.carousel-caption {
+  bottom:100px;
+  p {
+    font-size:1.2em;
+  }
+}
+
 //NAV
 .navbar {
   margin-bottom:0px;
