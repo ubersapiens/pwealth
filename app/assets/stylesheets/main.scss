@@ -13,8 +13,17 @@
     line-height:1.25em;
   }
 
+  .col-sm-4 {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+
   #news-title {
     font-weight:bolder;
+  }
+
+  #news-content {
+    font-size:16px;
   }
 }
 
