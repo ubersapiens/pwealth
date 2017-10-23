@@ -1,4 +1,5 @@
 class NewsController < ApplicationController
+  before_action :admin_only, except: [:index, :show]
   before_action :set_news, only: [:show, :edit, :update, :destroy]
 
   # GET /news

@@ -1,6 +1,12 @@
-<h1>Editing Cms Page</h1>
+<div class="container" id="pages-form">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Editing <%= @cms_page.title %></h1>
 
-<%= render 'form' %>
+      <%= render 'form' %>
 
-<%= link_to 'Show', @cms_page %> |
-<%= link_to 'Back', cms_pages_path %>
+      <%= link_to 'Show', @cms_page %> |
+      <%= link_to 'Back', cms_pages_path %>
+    </div>
+  </div>
+</div>
