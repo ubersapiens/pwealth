@@ -1,19 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="container" id="pages-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Text 1:</strong>
-  <%= @cms_page.text_1 %>
-</p>
+        <h1><%= @cms_page.title %></h1>
+        <p>
+          <strong>Content:</strong>
+          <%= @cms_page.text_1.html_safe  %>
+        </p>
 
-<p>
-  <strong>Text 2:</strong>
-  <%= @cms_page.text_2 %>
-</p>
-
-<p>
-  <strong>Text 3:</strong>
-  <%= @cms_page.text_3 %>
-</p>
-
-<%= link_to 'Edit', edit_cms_page_path(@cms_page) %> |
-<%= link_to 'Back', cms_pages_path %>
+        <%= link_to 'Edit', edit_cms_page_path(@cms_page) %> |
+        <%= link_to 'Back', cms_pages_path %>
+      </div>
+    </div>
+  </div>
+</div>
