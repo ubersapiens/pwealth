@@ -1,16 +1,20 @@
 Rails.application.routes.draw do
-  resources :cms_pages
-  resources :news
   mount Ckeditor::Engine => '/ckeditor'
   root 'main#home'
 
   resources :user_sessions
   resources :users
   resources :cms_homepages
+  resources :cms_pages
+  resources :news
 
   get 'login' => 'user_sessions#new', :as => :login
   get 'register' => 'users#new', :as => :register
   post 'logout' => 'user_sessions#destroy', :as => :logout
+
+  namespace :admin do
+    get '', to: 'dashboard#index', as: '/'
+  end
 
   get 'multi_family_office' => 'main#multi_family_office'
   get 'international_tax_planning' => 'main#international_tax_planning'
