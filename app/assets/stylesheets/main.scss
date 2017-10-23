@@ -27,48 +27,17 @@
   }
 }
 
+#description-image-container {
+  img {
+    width:100%;
+  }
+}
+
 .carousel-inner {
   img {
     filter: brightness(50%);
   }
 }
-
-#services-container {
-  border-top:2px solid black;
-  border-bottom:2px solid black;
-  padding: 4em;
-
-  .fa-calculator {
-    color:#2c3e50;
-  }
-  .fa-bank {
-    color:#7f8c8d;
-  }
-  .fa-money {
-    color:#27ae60;
-  }
-  .fa-book {
-    color:#A17917;
-  }
-
-  a {
-
-    &:hover {
-      background:none;
-      text-decoration:none;
-    }
-
-    p {
-      margin-top:0.5em;
-      font-size:1.2em;
-    }
-  }
-
-  .fa {
-    margin-bottom:0.2em;
-  }
-}
-
 
 #pages-container {
   h1 {

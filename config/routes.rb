@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   mount Ckeditor::Engine => '/ckeditor'
   root 'main#home'
 

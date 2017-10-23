@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171020115936) do
+ActiveRecord::Schema.define(version: 20171023150648) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,6 +93,15 @@ ActiveRecord::Schema.define(version: 20171020115936) do
   end
 
   add_index "cms_pages", ["slug"], name: "index_cms_pages_on_slug", using: :btree
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "email"
+    t.text     "message"
+    t.string   "name"
+    t.string   "phone_number"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
