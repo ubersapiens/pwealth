@@ -5,9 +5,9 @@
   }
 }
 
-
 #news-container {
-
+  margin-top: 3em;
+  margin-bottom: 3em;
   p {
     font-size: 18px;
     line-height:1.25em;
@@ -19,12 +19,13 @@
 }
 
 #description-container {
+  margin-top: 3em;
+  margin-bottom: 3em;
   p {
     font-size: 18px;
     line-height:1.25em;
   }
 }
-
 
 .carousel-inner {
   img {
@@ -32,9 +33,28 @@
   }
 }
 
-#cta-buttons {
-  border: 2px solid blue;
+#services-container {
+  background:#2C3E50;
+  color:white;
+  padding: 4em;
 
+  a {
+    color:white;
+
+    &:hover {
+      background:none;
+      text-decoration:none;
+    }
+
+    p {
+      margin-top:0.5em;
+      font-size:1.2em;
+    }
+  }
+
+  .fa {
+    margin-bottom:0.2em;
+  }
 }
 
 
