@@ -38,10 +38,24 @@ h1 {
   font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
+//CAROUSEL
 .carousel-caption {
   bottom:100px;
   p {
     font-size:1.2em;
+  }
+}
+
+//BUTTONS
+.btn-success {
+  font-size:1.6em;
+  background: #DB0A5B;
+  border: #DB0A5B;
+  padding:1em 1.5em;
+  font-weight: 700;
+  &:hover {
+    background: #03C9A9;
+    border: #03C9A9;
   }
 }
 
