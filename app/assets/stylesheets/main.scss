@@ -34,12 +34,24 @@
 }
 
 #services-container {
-  background:#000032;
-  color:white;
+  border-top:2px solid black;
+  border-bottom:2px solid black;
   padding: 4em;
 
+  .fa-calculator {
+    color:#2c3e50;
+  }
+  .fa-bank {
+    color:#7f8c8d;
+  }
+  .fa-money {
+    color:#27ae60;
+  }
+  .fa-book {
+    color:#A17917;
+  }
+
   a {
-    color:white;
 
     &:hover {
       background:none;
