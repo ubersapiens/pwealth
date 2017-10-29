@@ -7,4 +7,12 @@ class Admin::DashboardController < ApplicationController
   def pages
     @cms_pages = CmsPage.all
   end
+
+  def contacts
+    @contacts = Contact.all
+  end
+
+  def news
+    @news = News.all
+  end
 end

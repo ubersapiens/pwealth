@@ -7,9 +7,9 @@
     <div class="col-sm-3">
       <div class="list-group">
         <a href="/admin" class="list-group-item">Admin</a>
-        <a href="/admin/pages" class="list-group-item active">Pages</a>
+        <a href="/admin/pages" class="list-group-item">Pages</a>
         <a href="/admin/contacts" class="list-group-item">Contacts</a>
-        <a href="/admin/news" class="list-group-item">News</a>
+        <a href="/admin/news" class="list-group-item active">News</a>
         </div>
     </div>
     <div class="col-sm-9">
@@ -17,12 +17,12 @@
       <table>
 
         <tbody>
-          <% @cms_pages.each do |cms_page| %>
+          <% @news.each do |news| %>
             <tr>
-              <td><%= cms_page.title %></td>
-              <td><button class="btn-info"><%= link_to 'Show', cms_page %></button></td>
-              <td><button class="btn-warning"><%= link_to 'Edit', edit_cms_page_path(cms_page) %></button></td>
-              <td><button class="btn-danger"><%= link_to 'Destroy', cms_page, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+              <td><%= news.title %></td>
+              <td><button class="btn-info"><%= link_to 'Show', news %></button></td>
+              <td><button class="btn-warning"><%= link_to 'Edit', edit_news_path(news) %></button></td>
+              <td><button class="btn-danger"><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
             </tr>
           <% end %>
         </tbody>
@@ -30,7 +30,7 @@
 
       <br>
 
-      <%= link_to 'New Cms page', new_cms_page_path %>
+      <%= link_to 'New News page', new_news_path %>
     </div>
   </div>
 </div>
