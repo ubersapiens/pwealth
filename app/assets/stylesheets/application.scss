@@ -19,23 +19,23 @@
 @import "font-awesome";
 
 body {
-  font-family: 'Century Gothic';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 p {
-  font-family: 'Century Gothic';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 a {
-  font-family: 'Century Gothic';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 ul {
-  font-family: 'Century Gothic';
+  font-family: 'Lato', 'Helvetica', 'Arial';
 }
 
 h1 {
-  font-family: 'Century Gothic';
+  font-family: 'Lato', 'Helvetica', 'Arial';
   font-size:30px;
 }
 
@@ -52,10 +52,10 @@ h1 {
 
 //BUTTONS
 .btn-success {
-  font-size:1.6em;
+  font-size:1.4em;
   background: #DB0A5B;
   border: #DB0A5B;
-  padding:1em 1.5em;
+  padding:0.5em 1em;
   font-weight: 700;
   &:hover {
     background: #03C9A9;
