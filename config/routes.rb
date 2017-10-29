@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :contacts
   mount Ckeditor::Engine => '/ckeditor'
   root 'main#home'
 
@@ -8,10 +7,13 @@ Rails.application.routes.draw do
   resources :cms_homepages
   resources :cms_pages
   resources :news
+  resources :contacts
 
   get 'login' => 'user_sessions#new', :as => :login
   get 'register' => 'users#new', :as => :register
   post 'logout' => 'user_sessions#destroy', :as => :logout
+
+  get 'contact' => 'contacts#new'
 
   namespace :admin do
     get '', to: 'dashboard#index', as: '/'
