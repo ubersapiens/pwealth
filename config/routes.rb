@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     get '', to: 'dashboard#index', as: '/'
+    get 'pages', to: 'dashboard#pages'
   end
 
   get 'multi_family_office' => 'main#multi_family_office'
