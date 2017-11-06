@@ -39,6 +39,14 @@ h1 {
   font-size:30px;
 }
 
+.carousel-control {
+  background-image: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  color: white;
+}
+
 //CAROUSEL
 .carousel-caption {
   bottom:100px;
