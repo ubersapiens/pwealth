@@ -44,6 +44,8 @@ h1 {
   bottom:100px;
   background:black;
   opacity:0.6;
+  text-align:left;
+  padding:2em;
 
   p {
     font-size:1.2em;
@@ -67,7 +69,7 @@ h1 {
 .navbar {
   margin-bottom:0px;
   .navbar-header {
-    margin-bottom:4em;
+    margin-bottom:5em;
   }
 
   .navbar-nav {

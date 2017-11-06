@@ -22,11 +22,13 @@ Rails.application.routes.draw do
     get 'news', to: 'dashboard#news'
   end
 
+  get 'wealth' => 'main#wealth'
   get 'multi_family_office' => 'main#multi_family_office'
   get 'international_tax_planning' => 'main#international_tax_planning'
   get 'succession_planning' => 'main#succession_planning'
   get 'wealth_management' => 'main#wealth_management'
 
+  get 'immigration' => 'main#immigration'
   get 'immigration/antigua_and_barbuda_citizenship' => 'main#antigua_and_barbuda_citizenship'
   get 'immigration/cyprus_citizenship' => 'main#cyprus_citizenship'
   get 'immigration/dominica_citizenship' => 'main#dominica_citizenship'
@@ -42,6 +44,7 @@ Rails.application.routes.draw do
   get 'immigration/real_estate' => 'main#real_estate'
   get 'immigration/tax_residence' => 'main#tax_residence'
 
+  get 'corporate_services' => 'main#corporate_services'
   get 'incorporation_of_companies' => 'main#incorporation_of_companies'
   get 'incorporation_of_foundations' => 'main#incorporation_of_foundations'
   get 'formation_of_trusts' => 'main#formation_of_trusts'
