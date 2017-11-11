@@ -20,12 +20,8 @@
     <%= f.cktext_area :text_1, rows: 10 %>
   </div>
   <div class="field">
-    <%= f.label :image_1, 'Add primary image' %><br>
+    <%= f.label :image_1, 'Upload header image (optimal sizing 1901x401)' %><br>
     <%= f.file_field :image_1 %>
-  </div>
-  <div class="field">
-    <%= f.label :image_2, 'Add secondary image' %><br>
-    <%= f.file_field :image_2 %>
   </div>
   <div class="actions">
     <%= f.submit %>
