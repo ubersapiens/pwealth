@@ -85,3 +85,14 @@
     font-size:18px;
   }
 }
+
+a.right.carousel-control {
+  &:hover {
+    background:none;
+  }
+}
+a.left.carousel-control {
+  &:hover {
+    background:none;
+  }
+}
