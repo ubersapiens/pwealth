@@ -28,6 +28,9 @@ p {
 
 a {
   font-family: 'Lato', 'Helvetica', 'Arial';
+  &:hover {
+    background:none;
+  }
 }
 
 ul {
