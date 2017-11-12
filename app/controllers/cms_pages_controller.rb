@@ -4,6 +4,11 @@ class CmsPagesController < ApplicationController
 
   def index
     @cms_pages = CmsPage.all
+    if params[:search]
+      @cms_pages = CmsPage.search(params[:search]).order("created_at DESC")
+    else
+      @cms_pages = CmsPage.all.order("created_at DESC")
+    end
   end
 
   # GET /cms_pages/1

@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#cms-index {
+  table td {
+    padding:1em;
+    font-size:1.2em;
+  }
+  margin-bottom:4em;
+}
+
 #pages-form {
   margin-top: 3em;
   margin-bottom: 3em;

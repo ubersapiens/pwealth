@@ -7,4 +7,8 @@ class CmsPage < ActiveRecord::Base
 
   validates_attachment_content_type :image_1, :content_type => /\Aimage\/.*\Z/
   validates_attachment_content_type :image_2, :content_type => /\Aimage\/.*\Z/
+
+  def self.search(search)
+  where("title LIKE ? OR text_1 LIKE ?", "%#{search}%", "%#{search}%") 
+end
 end
