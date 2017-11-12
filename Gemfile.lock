@@ -178,6 +178,8 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    recaptcha (4.6.2)
+      json
     sass (3.5.1)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -248,6 +250,7 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.1)
   rails_12factor
+  recaptcha
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sitemap_generator
@@ -261,4 +264,4 @@ RUBY VERSION
    ruby 2.2.1p85
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.0
