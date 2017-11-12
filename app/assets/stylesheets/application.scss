@@ -51,7 +51,7 @@ h1 {
 .carousel-caption {
   left:10%;
   right:10%;
-  bottom:100px;
+  bottom:20px;
   background:black;
   opacity:0.6;
   text-align:left;
@@ -121,6 +121,7 @@ h1 {
 
 @media (min-width: 768px) {
   .carousel-caption {
+    bottom:100px;
     h1 {
       font-size:30px;
     }
