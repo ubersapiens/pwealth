@@ -19,8 +19,8 @@
         <tbody>
           <% @contacts.each do |contact| %>
             <tr>
-              <td width="70%"><%= contact.name %></td>
-              <td width="10%"><button class="btn-info"><%= link_to 'Show', contact %></button></td>
+              <td width="40%"><%= contact.name %></td>
+              <td width="40%"><%= contact.email %></td>
               <td width="10%"><button class="btn-warning"><%= link_to 'Edit', edit_contact_path(contact) %></button></td>
               <td width="10%"><button class="btn-danger"><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
             </tr>
@@ -30,7 +30,6 @@
 
       <br>
 
-      <%= link_to 'New contact page', new_contact_path %>
     </div>
   </div>
 </div>

@@ -1,19 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="container" id="pages-form">
+  <div class="row">
+    <div class="col-sm-12">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @news.title %>
-</p>
+      <p>
+        <strong><%= @news.title %></strong>
+      </p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @news.content %>
-</p>
+      <p>
+        <%= @news.content.html_safe %>
+      </p>
 
-<p>
-  <strong>Link:</strong>
-  <%= @news.link %>
-</p>
-
-<%= link_to 'Edit', edit_news_path(@news) %> |
-<%= link_to 'Back', news_index_path %>
+      <%= link_to 'Edit', edit_news_path(@news) %> |
+      <%= link_to 'Back', admin_path %>
+    </div>
+  </div>
+</div>
