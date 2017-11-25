@@ -46,7 +46,7 @@ class CmsPagesController < ApplicationController
   def update
     respond_to do |format|
       if @cms_page.update(cms_page_params)
-        format.html { redirect_to @cms_page, notice: 'Cms page was successfully updated.' }
+        format.html { redirect_to admin_pages_path, notice: 'Cms page was successfully updated.' }
         format.json { render :show, status: :ok, location: @cms_page }
       else
         format.html { render :edit }

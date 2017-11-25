@@ -43,7 +43,7 @@ class NewsController < ApplicationController
   def update
     respond_to do |format|
       if @news.update(news_params)
-        format.html { redirect_to @news, notice: 'News was successfully updated.' }
+        format.html { redirect_to admin_news_path, notice: 'News was successfully updated.' }
         format.json { render :show, status: :ok, location: @news }
       else
         format.html { render :edit }
