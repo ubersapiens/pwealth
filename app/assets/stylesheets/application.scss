@@ -140,6 +140,12 @@ h1 {
 }
 
 @media (min-width: 768px) {
+
+  #header-container {
+    img {
+      width:100%;
+    }
+  }
   .carousel-caption {
     left:15%;
     right:15%;
