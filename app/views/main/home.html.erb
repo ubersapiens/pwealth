@@ -84,7 +84,7 @@
     <% @news.last(3).each do |n| %>
       <div class="col-sm-4">
         <p id="news-title"><%= n.title %></p>
-        <p id="news-content"><%= n.content.first(300).html_safe %>...<%= link_to 'Read more', n %></p>
+        <p id="news-content"><%= n.summary %>...<%= link_to 'Read more', n %></p>
       </div>
     <% end %>
   </div>
