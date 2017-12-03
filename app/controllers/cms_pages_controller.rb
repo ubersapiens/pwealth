@@ -32,7 +32,7 @@ class CmsPagesController < ApplicationController
 
     respond_to do |format|
       if @cms_page.save
-        format.html { redirect_to @cms_page, notice: 'Cms page was successfully created.' }
+        format.html { redirect_to admin_pages_path, notice: 'Cms page was successfully created.' }
         format.json { render :show, status: :created, location: @cms_page }
       else
         format.html { render :new }
