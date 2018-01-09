@@ -28,7 +28,11 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to root_path, notice: 'Contact was successfully created.' }
+
+        # Sends email to user when user is created.
+        ContactFormMailer.contact_form_email(@contact).deliver
+
+        format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }

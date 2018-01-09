@@ -74,6 +74,17 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  config.action_mailer.delivery_method = :smtp
+    # SMTP settings for gmail
+    config.action_mailer.smtp_settings = {
+     :address              => "mail.pardiniwealth.com",
+     :port                 => 2525,
+     :user_name            => ENV['EMAIL_USERNAME'],
+     :password             => ENV['EMAIL_PASSWORD'],
+     :authentication       => "plain",
+     :enable_starttls_auto => true
+  }
+
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {

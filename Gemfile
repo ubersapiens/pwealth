@@ -24,6 +24,7 @@ gem 'sitemap_generator'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'ckeditor'
 gem 'recaptcha', require: 'recaptcha/rails'
+gem 'meta-tags'
 
 group :development, :test do
   gem 'byebug'
