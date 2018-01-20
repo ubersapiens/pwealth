@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Pardini Wealth" %></title>
     <% if content_for?(:head) %>
       <%= yield(:head) %>
     <% else %>
-      <meta name="description" content="Pardini Wealth">
-      <meta name="keywords" content="tax, wealth, private banking, offshore, legal, yacht">
+      <title>Pardini Wealth</title>
+      <meta name="description" content="Panama Law Firm specialized in Private Wealth">
+      <meta name="keywords" content="Private Wealth">
     <% end %>
     <%= stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true  %>
     <%= favicon_link_tag 'favicon.ico' %>
