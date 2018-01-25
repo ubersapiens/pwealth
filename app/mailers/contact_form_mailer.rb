@@ -4,6 +4,8 @@ class ContactFormMailer < ApplicationMailer
 
   def contact_form_email(contact)
     @contact = contact
-    mail(to: @contact.email, subject: 'Sample Email')
+    mail(to: "jf_pardini@hotmail.com",
+         subject: @contact.message, 
+         from: "contact@pardiniwealth.com")
   end
 end
