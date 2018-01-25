@@ -77,8 +77,8 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
-   :address              => "contact@pardiniwealth.com",
-   :domain               => "mail.pardiniwealth.com",
+   :address              => "mail.pardiniwealth.com",
+   :domain               => "www.heroku.com",
    :port                 => 2525,
    :user_name            => ENV['EMAIL_USERNAME'],
    :password             => ENV['EMAIL_PASSWORD'],
