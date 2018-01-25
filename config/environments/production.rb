@@ -83,7 +83,7 @@ Rails.application.configure do
    :password             => ENV['EMAIL_PASSWORD'],
    :authentication       => "plain",
    :enable_starttls_auto => true,
-   :domain               => "pardiniwealth.herokuapp.com"
+   :domain               => "pardiniwealth.com"
   }
 
   config.paperclip_defaults = {
