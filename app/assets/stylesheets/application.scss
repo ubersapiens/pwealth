@@ -183,6 +183,12 @@ h1 {
       width:100%;
     }
   }
+  #pages-container {
+    img {
+      width:none;
+      height:none;
+    }
+  }
   .carousel-caption {
     left:15%;
     right:15%;
