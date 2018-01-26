@@ -185,8 +185,8 @@ h1 {
   }
   #pages-container {
     img {
-      width:none;
-      height:none;
+      width:inherit !important;
+      height:inherit !important;
     }
   }
   .carousel-caption {
